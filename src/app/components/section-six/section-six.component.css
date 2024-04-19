@@ -1,0 +1,157 @@
+.sec {
+    z-index: 11;
+    position: relative;
+    padding: 10px;
+    background: black;
+    display: flex;
+    outline: red solid 5px;
+    
+  }
+
+.slidesd_daddy {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  height: auto;
+  width: 100%;
+  outline: green solid 10px;
+}
+
+.slideshow-container {
+    max-width: 1400px;
+    position: relative;
+
+   
+    overflow-x: hidden;
+    height: auto;
+    max-height: 800px;
+    overflow-y: hidden;
+    outline: rgb(0, 17, 255) solid 5px;
+    
+    
+  }
+
+.words_un {
+    outline: purple solid 2px;
+    display: flex;
+    position: relative;
+    color: white;
+    font-size: 3.5vw;
+    opacity: 1;
+    transition: 0.5 ease-in-out;
+    font-weight: 900;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    max-height: 800px;
+    overflow: hidden;
+  }
+
+
+.prev,
+.next {
+   
+  cursor: pointer;
+  position: absolute;
+  top: 150px;
+  width: auto;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+@media only screen and (min-width: 769px){
+  .words_un{
+    font-size: 1em;
+    max-height: 1000px;
+  }
+
+  .slideshow-container {
+    max-width: 1400px;
+    position: relative;
+    
+    overflow-x: hidden;
+    height: auto;
+    max-height: 1000px;
+    
+    
+  }
+
+}
+
+@media only screen and (min-width: 1000px){
+  .sec {
+    padding: 100px;
+  }
+
+  .mySlides:hover .project_ima {
+    filter: blur(15px);
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+    transition: 1s ease-out;
+  }
+  
+  .words_un {
+    outline: rgb(217, 255, 0) solid 2px;
+    display: flex;
+    position: relative;
+    color: black;
+    font-size: 2.2em;
+    opacity: 0;
+    transition: 0.5 ease-in-out;
+    font-weight: 900;
+    margin-right: 30px;
+    margin-left: 30px;
+    transform: translateY(-520px);
+    
+    
+  }
+
+  .slideshow-container:hover .words_un {
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+    
+  
+    z-index: 8;
+    filter: blur(0px);
+  }
+  
+  .prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+}

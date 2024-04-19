@@ -1,0 +1,60 @@
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+  }
+
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+#text_last {
+  position: absolute;
+  color: white;
+  white-space: nowrap;
+  font-size: 15vw;
+  right: 100px;
+  
+  z-index: 9;
+  transform: translateY(350px);
+}
+
+section img#house1 {
+  z-index: 8;
+}
+
+section img#house2 {
+  z-index: 12;
+}
+section img#house3 {
+  z-index: 12;
+}
+
+@media only screen and (width: 768px) {
+  #text_last {
+    right: 150px;
+    transform: translateY(550px);
+  }
+
+}
+
+@media only screen and (min-width: 1000px) {
+  #text_last {
+    font-size: 7.5vw;
+    right: 600px;
+
+    transform: translateY(400px);
+  }
+}
